@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+}
+.datenschutz-main {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 95%;
+  padding: 40px;
+  background-color: rgb(255, 255, 255);
+  @media only screen and (max-height: 800px) {
+    width: 100%;
+    padding: 0px;
+  }
+  p {
+    font-size: 20px;
+  }
+  strong {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  a {
+    color: goldenrod;
+    text-decoration: none;
+  }
+}

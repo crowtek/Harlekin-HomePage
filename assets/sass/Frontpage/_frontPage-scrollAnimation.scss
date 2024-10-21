@@ -1,0 +1,63 @@
+// scroll mause effeckt
+$gold: #C5A15D;
+
+.FrontPage-scroll {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  color: $gold;
+  letter-spacing: 2px;
+  opacity: 60%;
+  transition: all 7s ease;
+  animation: popUp 7s forwards;
+}
+.ScrollAnimation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 30px;
+  border: solid 2px $gold;
+  border-radius: 6px;
+  margin: 10px;
+}
+.mausrolle {
+  width: 2px;
+  height: 4px;
+  border-radius: 7px;
+  background-color: $gold;
+  transition: all 2s ease;
+  animation: mauseAnimation 5s infinite;
+}
+
+@keyframes mauseAnimation {
+  from {
+    transform: translateY(-10px);
+    height: 5px;
+  }
+  to {
+    transform: translateY(11px);
+    height: 3px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .FrontPage-scroll {
+    position: absolute;
+    top: 79vh;
+    left: 0;
+  }
+}
+
+@keyframes popUp {
+  from{
+    opacity: 0%;
+  }
+  to{
+    opacity: 60%;
+  }
+}

@@ -1,0 +1,251 @@
+$gold: #c5a15d;
+$gray: #cacaca;
+$black: #09090b;
+
+.aboutBot {
+  position: relative;
+  padding-top: 100px;
+  height: 170vh;
+  width: 100%;
+  min-height: 800px;
+}
+
+.galarie-container {
+  position: relative;
+  z-index: 40;
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  .contactCard {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    width: 100%;
+    height: 60px;
+    min-width: 500px;
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 100%;
+      font-size: 18px;
+      background-color: $black;
+      transition: all 0.3s ease;
+      border-radius: 4px;
+      color: $gold;
+      border: solid 1px $gold;
+      cursor: pointer;
+      font-weight: bold;
+      letter-spacing: 1px;
+      img {
+        margin-left: 10px;
+        filter: invert(97%) sepia(19%) saturate(3706%) hue-rotate(309deg) brightness(83%) contrast(83%);
+      }
+    }
+    button:hover {
+      background-color: $gray;
+      color: $black;
+      img {
+        filter: unset;
+      }
+    }
+  }
+}
+.galarie_text {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 100px;
+  padding-top: 60px;
+  h1 {
+    font-size: 66px;
+    color: $gold;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 22px;
+    color: $gray;
+  }
+  @media only screen and (max-width: 1650px) {
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+//bilder Galarie  -------------------------
+.galarie-bilder {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10px 35px;
+  width: 60%;
+  height: 70%;
+  position: relative;
+  z-index: 40;
+  margin-top: 50px;
+  .gb {
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #09090b;
+    border: solid 1px $gold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    @media only screen and (max-width: 1650px) {
+      width: 250px;
+      height: 250px;
+    }
+  }
+
+  .gb:hover {
+    box-shadow: #c5a15d86 0px 0px 20px 0px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+}
+.galarie1 {
+  background-image: url(/assets/img/g1-small.jpg);
+}
+.galarie2 {
+  background-image: url(/assets/img/g2-small.jpg);
+}
+.galarie3 {
+  background-image: url(/assets/img/g3-small.jpg);
+}
+.galarie4 {
+  background-image: url(/assets/img/g4-small.jpg);
+}
+.galarie5 {
+  background-image: url(/assets/img/g5-small.jpg);
+}
+.galarie6 {
+  background-image: url(/assets/img/g6-small.jpg);
+}
+
+/*
+.gb-big{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #09090B;
+  img{
+    max-width: 1000px;
+  }
+}*/
+.galarie1-big,
+.galarie2-big,
+.galarie3-big,
+.galarie4-big,
+.galarie5-big,
+.galarie6-big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1000;
+  top: -150px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #09090bcb;
+  cursor: pointer;
+  img {
+    max-width: 1000px;
+    max-height: 800px;
+    border: #c5a15d solid 1px;
+  }
+}
+.hidden {
+  display: none;
+}
+
+//website Viedo --------------------------------
+.video-container {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+}
+.video-seite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  height: 100%;
+}
+.video {
+  border: solid 1px $gold;
+  position: relative;
+  z-index: 40;
+  width: 900px;
+  height: 500px;
+  border-radius: 5px;
+  cursor: pointer;
+  @media only screen and (max-width: 1650px) {
+    width: 650px;
+    height: 368px;
+  }
+}
+
+.video-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  height: 60%;
+  padding-top: 160px;
+  h1 {
+    color: $gold;
+    font-size: 66px;
+    margin-bottom: 30px;
+  }
+  p {
+    color: $gray;
+    font-size: 20px;
+    padding-right: 140px;
+  }
+  @media only screen and (max-width: 1650px) {
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 18px;
+      padding-right: 40px;
+    }
+  }
+  .contactCard {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    button {
+      position: relative;
+      z-index: 200;
+      width: 40%;
+      height: 100%;
+      font-size: 18px;
+      padding: 14px 32px;
+      margin-top: 60px;
+      background-color: #09090b;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      border-radius: 4px;
+      color: #c5a15d;
+      border: solid 1px #c5a15d;
+      cursor: pointer;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .aboutBot {
+    display: none;
+  }
+}

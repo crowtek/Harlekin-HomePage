@@ -1,0 +1,100 @@
+$gold: #C5A15D;
+$black: #09090B;
+$gray: #CACACA;
+
+.contactMobile {
+  position: relative;
+  border-top: $gold solid 1px;
+  border-bottom: $gold solid 1px;
+  min-height: 800px;
+  max-height: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 41;
+  .contactMobile-main {
+    width: 100%;
+    height: 100%;
+  }
+  .contact-mobileData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 2px;
+    color: $gray;
+    padding: 1.5rem;
+    h1 {
+      font-size: 36px;
+      color: $gold;
+    }
+    p {
+      font-size: 18px;
+    }
+    a {
+      font-size: 18px;
+      color: $gray;
+      text-decoration: none;
+    }
+    #googleMaps-ImageMobile {
+      margin-top: 30px;
+      width: 320px;
+    }
+    .contact-mobileData-top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 200px;
+      p{
+        font-size: 16px;
+      }
+    }
+    .contact-mobileCard {
+      margin-top: 20px;
+      width: 320px;
+      height: 50px;
+      button {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border: none;
+        font-size: 18px;
+        transition: all 0.4s ease;
+        background-color: unset;
+        border-bottom: $gold solid 1px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        color: $gold;
+        img {
+          filter: invert(62%) sepia(72%) saturate(267%) hue-rotate(1deg) brightness(92%) contrast(90%);
+        }
+      }
+      button:hover {
+        background-color: black;
+        color: goldenrod;
+        border: solid 1px goldenrod;
+      }
+    }
+  }
+}
+
+.googleMobile {
+  display: flex;
+  justify-content: end;
+  width: 320px;
+  height: 30px;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .contactMobile {
+    display: none;
+  }
+}

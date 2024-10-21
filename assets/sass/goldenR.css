@@ -1,0 +1,9 @@
+.golden_robs {
+  position: absolute;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  background-color: red;
+  height: 100%;
+  width: 100%;
+}/*# sourceMappingURL=goldenR.css.map */

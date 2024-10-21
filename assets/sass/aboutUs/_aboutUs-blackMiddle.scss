@@ -1,0 +1,38 @@
+// schwarzer strich links animation ----------------------------------------
+.blackmove {
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  height: 320vh;
+  width: 100px;
+  .movingBlack {
+    transition: background-color 0.5s ease;
+    bottom: 30%;
+    height: 150px;
+    width: 2px;
+    margin-top: 0%;
+    background-color: #C5A15D;
+    box-shadow: #c5a15d2d 0px 15px 30px 4px;
+    border-radius: 5px;
+    margin-left: -20px;
+  }
+}
+#scrollanimation {
+  margin-top: 0%;
+  display: flex;
+}
+
+//medium display media blackcorner
+@media only screen and (max-width: 1700px) {
+  .blackmove {
+    left: -100px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .blackmove {
+    display: none;
+  }
+}

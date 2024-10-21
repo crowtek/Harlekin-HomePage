@@ -1,0 +1,41 @@
+$gold: #C5A15D;
+
+.aboutMe-Layout {
+  height: 100vh;
+  width: 100%;
+  font-family: "Maven Pro", sans-serif;
+  min-height: 800px;
+}
+
+
+
+.blackFiller{
+  position: relative;
+  height: 100px;
+  width: 100%;
+  padding-left: 150px;
+}
+.blackFiller2{
+  height: 100px;
+  width: 100%;
+}
+
+
+
+
+.site-number{
+  position: absolute;
+  bottom: 0px;
+  left: 100px;
+  img{
+    width: 120px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .aboutMe-Layout {
+    display: none;
+  }
+  .blackFiller{
+    display: none;
+  }
+}

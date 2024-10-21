@@ -1,0 +1,111 @@
+$gold: #C5A15D;
+$black: #09090B;
+$gray: #CACACA;
+
+// about us mobile version
+.aboutUs-mobile {
+  font-family: "Maven Pro", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 120vh;
+  min-height: 1200px;
+  max-height: 1200px;
+  width: 100%;
+  overflow: hidden;
+  .aboutUs-mobileMain {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: $second;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    .aboutUs-mobile-topText {
+      position: relative;
+      z-index: 41;
+      width: 100%;
+      p {
+        color: white;
+        font-size: 20px;
+        text-align: left;
+        padding: 0 20px;
+      }
+      h1 {
+        color: $gold;
+        margin-top: 30px;
+        font-size: 36px;
+        text-align: left;
+        padding-left: 20px;
+      }
+    }
+  }
+}
+// about us mobile image
+.aboutUs-mobile-midImg {
+  position: relative;
+  z-index: 41;
+  height: 350px;
+  width: 100%;
+  background-image: url("/assets/img/12.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// small display about us section
+.aboutUs-mobile-bottomText {
+  position: relative;
+  z-index: 41;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items: flex-end;
+  height: auto;
+  width: 90%;
+  color: $black;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: $black;
+  border-radius: 5px;
+  border: $gold solid 1px;
+  p {
+    font-size: 20px;
+    text-align: left;
+    font-style: italic;
+    color: $gray;
+  }
+  span{
+    margin-left: 100px;
+    font-size: 16px;
+    font-style: italic;
+    opacity: 70%;
+  }
+  h1 {
+    font-size: 26px;
+    margin-left: 20px;
+  }
+  button {
+    position: relative;
+    z-index: 40;
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    background-color:$black;
+    border: none;
+    border-radius: 5px;
+    color: $gray;
+    img{
+      filter: invert(62%) sepia(72%) saturate(267%) hue-rotate(1deg) brightness(92%) contrast(90%);
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .aboutUs-mobile {
+    display: none;
+  }
+}
